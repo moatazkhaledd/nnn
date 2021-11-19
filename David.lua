@@ -132,7 +132,7 @@ print("\27[36m"..[[
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵ ┉ ┉ ┉ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId
-SudoIds = {Config.SudoIds,1836706131 ,1364212456,000000}
+SudoIds = {Config.SudoIds,2123332060 ,000000}
 David = Config.David
 TokenBot = Config.TokenBot
 NameBot = (DevRio:get(David..'Rio:NameBot') or 'ماك')
