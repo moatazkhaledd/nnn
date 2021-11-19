@@ -13253,7 +13253,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n᥀︙ قائمة ملفات متجر سورس ميلان \n᥀︙ الملفات المتوفره حاليا ↫ ⤈\᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n"
+local TextS = "\n᥀︙ قائمة ملفات متجر سورس ميلان \n᥀︙ الملفات المتوفره حاليا ↫ ⤈\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n"
 local TextE = "᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙︙\n᥀︙ علامة ↫ (✔) تعني الملف مفعل\n᥀︙ علامة ↫ (✖️) تعني الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
