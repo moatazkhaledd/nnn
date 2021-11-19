@@ -11315,7 +11315,7 @@ if text and (text == "انمي" or text == "↫ انمي ✵") and not DevRio:ge
 Rio = math.random(3,1002); 
 local Text ='*✵⤈ تم اختيار صورة الانمي لك*'
 keyboard = {}  
-keyboard.inline_keyboard = {{{text="« مره أخري »",callback_data="/anime:"..msg.sender_user_id_}},{{text = '« TeAm MilAn »,url="t.me/SORMILAN"}}} 
+keyboard.inline_keyboard = {{{text="« مره أخري »",callback_data="/anime:"..msg.sender_user_id_}},{{text = '« TeAm MilAn »',url="t.me/SORMILAN"}}} 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AnimeDavid/'..Rio..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
