@@ -3627,7 +3627,7 @@ end
 if text and (text == 'المطور' or text == 'مطور' or text == '↫  المطور ✵') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,result)
 local msg_id = msg.id_/2097152/0.5
-Text = "*᥀︙ Dev Name ↬ * ["..result.first_name_.."](T.me/"..result.username_..")\n*᥀︙ Dev User ↬* [@"..result.username_.."]\n*᥀︙ Dev id ↬* ["..result.id_.."](T.me/"..result.username_..")"
+Text = "*✵⤈ Dev Name ↬ * ["..result.first_name_.."](T.me/"..result.username_..")\n*✵⤈ Dev User ↬* [@"..result.username_.."]\n*✵⤈ Dev id ↬* ["..result.id_.."](T.me/"..result.username_..")"
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = ''..result.first_name_..' ',url="t.me/"..result.username_ or SORMILAN}}}
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -3888,7 +3888,7 @@ else
 LinkGroup = 'لا يوجد'
 end
 DevRio:set(David.."Rio:Groups:Links"..msg.chat_id_,LinkGroup) 
-SendText(DevId,"✵⤈ تم تفعيل مجموعه جديده ↫ ⤈ \n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n✵⤈ بواسطة ↫ "..Name.."\n✵⤈ موقعه في المجموعه ↫ "..status.."\n✵⤈ اسم المجموعه ↫ ["..NameChat.."]\n✵⤈ عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n✵⤈ ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✵⤈ رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n✵⤈ الوقت ↫ "..os.date("%I:%M%p").."\n✵⤈ التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"✵⤈ تم تفعيل مجموعه جديده ↫ ⤈ \n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ بواسطة ↫ "..Name.."\n✵⤈ موقعه في المجموعه ↫ "..status.."\n✵⤈ اسم المجموعه ↫ ["..NameChat.."]\n✵⤈ عدد اعضاء المجموعه ↫ ❨ *"..NumMem.."* ❩\n✵⤈ ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✵⤈ رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ الوقت ↫ "..os.date("%I:%M%p").."\n✵⤈ التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end end
 end,nil)
@@ -5197,7 +5197,7 @@ if text == 'بوت' or text == 'بوتت' or text == 'شسمه البوت' or te
 Rio = math.random(3,1002); 
 local Text ='*✵اسمي '..NameBot..'*'
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '• 𝒄𝒉 𝐌𝐀𝐊 ✵ •',url="t.me/SORMILAN"}},{{text = '•  Ch ✵ •',url="t.me/BLACK_TEAM_4"}}} 
+keyboard.inline_keyboard = {{{text = '« TeAm MilAn »',url="t.me/SORMILAN"}}} 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AnimeDavid/'..Rio..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -5226,7 +5226,7 @@ if text ==  'حذف نقاطي' and ChCheck(msg) or text ==  'مسح نقاطي'
 --     Source David     --
 if text == 'سمايلات' and ChCheck(msg) or text == 'السمايلات' and ChCheck(msg) or text == '↫ سمايلات ✵' and ChCheck(msg) then
 if not DevRio:get(David..'Rio:Lock:Games'..msg.chat_id_) then
-DevRio2 = {'??','🍎','🍐','🍊','🍋','🍌','🍉','🍇','🍓','🍈','🍒','🍑','🍍','🥥','🥝','🍅','🍆','🥑','🥦','🥒','🌶','🌽','🥕','🥔','🍠','🥐','🍞','🥖','🥨','🧀','🥚','🍳','🥞','🥓','🥩','🍗','🍖','🌭','🍔','🍟','🍕','🥪','🥙','🍼','☕️','🍵','🥤','🍶','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🏆','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🛎','📤','🎗','🏵','🎖','🏆','🥌','??','🚕','🚗','🚙','🚌','🚎','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔️','🛡','🔮','🌡','💣','⏱','🛢','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
+DevRio2 = {'🍏','🍎','🍐','🍊','🍋','🍌','??','🍇','🍓','🍈','🍒','🍑','🍍','🥥','🥝','🍅','🍆','🥑','🥦','🥒','🌶','🌽','🥕','🥔','🍠','🥐','🍞','🥖','🥨','🧀','🥚','🍳','🥞','🥓','🥩','🍗','🍖','🌭','🍔','🍟','🍕','🥪','🥙','🍼','☕️','🍵','🥤','🍶','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🏆','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🛎','📤','🎗','🏵','🎖','🏆','🥌','??','🚕','🚗','🚙','🚌','🚎','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔️','🛡','🔮','🌡','💣','⏱','🛢','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
 name = DevRio2[math.random(#DevRio2)]
 DevRio:set(David..'Rio:GameNum'..msg.chat_id_,name)
 DevRio:del(David..'Rio:Games:Ids'..msg.chat_id_)
@@ -7753,7 +7753,7 @@ end
 ChatKick(result.chat_id_, result.sender_user_id_)
 text = "✵⤈ تم طرده من المجموعه" 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="• الغاء حظر •",callback_data=msg.sender_user_id_..":UnBan:"..result.sender_user_id_}},{{text = '• ✵ 𝐒𝐎𝗨𝐑𝐂𝐄 𝐌??𝐊 •',url="t.me/SORMILAN"}}}
+keyboard.inline_keyboard = {{{text="• الغاء حظر •",callback_data=msg.sender_user_id_..":UnBan:"..result.sender_user_id_}},{{text = '• ✵ 𝐒𝐎𝗨𝐑𝐂𝐄 𝐌𝐀𝐊 •',url="t.me/SORMILAN"}}}
 Msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end,nil)
@@ -11886,7 +11886,7 @@ LinkGroup = 'لا يوجد'
 end
 DevRio:set(David.."Rio:Groups:Links"..msg.chat_id_,LinkGroup) 
 if not Sudo(msg) then
-SendText(DevId,"✵⤈ تم تعطيل مجموعه جديده ↫ ⤈ \n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n✵⤈ بواسطة ↫ "..Name.."\n✵⤈ اسم المجموعه ↫ ["..NameChat.."]\n✵⤈ ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✵⤈ رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n✵⤈ الوقت ↫ "..os.date("%I:%M%p").."\n✵⤈ التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"✵⤈ تم تعطيل مجموعه جديده ↫ ⤈ \n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ بواسطة ↫ "..Name.."\n✵⤈ اسم المجموعه ↫ ["..NameChat.."]\n✵⤈ ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n✵⤈ رابط المجموعه ↫ ⤈\n❨ ["..LinkGroup.."] ❩\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ الوقت ↫ "..os.date("%I:%M%p").."\n✵⤈ التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end
 end,nil)
@@ -11920,7 +11920,7 @@ else
 LinkGroup = '✵⤈ ليست لدي صلاحية الدعوه لهذه المجموعه !'
 end
 if not Sudo(msg) then
-SendText(DevId,"✵⤈ هناك من بحاجه الى مساعده ↫ ⤈ \n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n✵⤈ الشخص ↫ "..Name.."\n✵⤈ اسم المجموعه ↫ ["..NameChat.."]\n✵⤈ ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n✵⤈ الوقت ↫ "..os.date("%I:%M%p").."\n✵⤈ التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
+SendText(DevId,"✵⤈ هناك من بحاجه الى مساعده ↫ ⤈ \n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ الشخص ↫ "..Name.."\n✵⤈ اسم المجموعه ↫ ["..NameChat.."]\n✵⤈ ايدي المجموعه ↫ ⤈ \n❨ `"..msg.chat_id_.."` ❩\n"..LinkGroup.."\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ الوقت ↫ "..os.date("%I:%M%p").."\n✵⤈ التاريخ ↫ "..os.date("%Y/%m/%d").."",0,'md')
 end
 end,nil)
 end,nil)
