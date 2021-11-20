@@ -129,7 +129,7 @@ print("\27[36m"..[[
   
 > CH › @SORMILAN
 ~> DEVELOPER › @XB0BB
-]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵ ┉ ┉ ┉ ┉\27[m")
+]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙ ┉ ┉ ┉ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙ ┉ ┉ ┉ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId
 SudoIds = {Config.SudoIds,2123332060 ,000000}
@@ -437,7 +437,7 @@ end
 function AddFileSource(msg,chat,ID_FILE,File_Name)
 if File_Name:match('.lua') then
 if File_Name ~= "David.lua" then 
-send(chat,msg.id_," ✵⤈ هذا الملف ليس تابع لسورس ماك")
+send(chat,msg.id_," ✵⤈ هذا الملف ليس تابع لسورس ميلان ")
 return false 
 end      
 local File = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/getfile?file_id='..ID_FILE) ) 
@@ -1073,7 +1073,7 @@ EditMsg(Chat_Id2, Msg_Id2, "✵⤈ تم الغاء اللعبه لاعادة ا�
 end
 if DataText == '/ListRolet' then
 local List = DevRio:smembers(David..'Rio:ListRolet'..data.chat_id_) 
-local Text = '✵⤈ قائمة الاعبين ↫ ⤈\n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n' 
+local Text = '✵⤈ قائمة الاعبين ↫ ⤈\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n' 
 local Textt = '᥀︙ ○━━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━━○ ᥀︙\n✵⤈ تم اكتمال العدد الكلي هل انت مستعد ؟'
 for k, v in pairs(List) do 
 Text = Text..k.."~ : [" ..v.."]\n"  
@@ -1721,7 +1721,7 @@ Dev_Rio(data.chat_id_, data.id_, 1, "✵⤈ تم الغاء الامر" ,  1, "m
 DevRio:del(David..'Rio:Add:GpRed'..data.sender_user_id_..data.chat_id_)
 return false
 end
-Text = "✵⤈ ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✵⤈ يمكنك اضافة الى النص ↫ ⤈\n✵○━━━━ 𝐌𝐀𝐊 ✵━━━━○✵\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ للخروج ارسل ↫ ( الغاء )\n ✓"
+Text = "✵⤈ ارسل لي الرد سواء كان ↫ ⤈\n❨ ملف • ملصق • متحركه • صوره\n • فيديو • بصمه • صوت • رساله ❩\n✵⤈ يمكنك اضافة الى النص ↫ ⤈\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n `#username` ↬ معرف المستخدم\n `#msgs` ↬ عدد الرسائل\n `#name` ↬ اسم المستخدم\n `#id` ↬ ايدي المستخدم\n `#stast` ↬ رتبة المستخدم\n `#edit` ↬ عدد السحكات\n᥀︙ ○━━━ «  𝐌𝐈𝐋𝐀𝐍 » ━━━○ ᥀︙\n✵⤈ للخروج ارسل ↫ ( الغاء )\n ✓"
 DevRio:set(David..'Rio:Add:GpRed'..data.sender_user_id_..data.chat_id_,'SaveGpRed')
 DevRio:set(David..'Rio:Add:GpText'..data.sender_user_id_..data.chat_id_,text)
 DevRio:sadd(David..'Rio:Manager:GpRed'..data.chat_id_,text)
@@ -5193,11 +5193,19 @@ end
 end 
 --     Source David     --
 if ChatType == 'sp' or ChatType == 'gp' or ChatType == 'pv' then
-if text == 'بوت' or text == 'بوتت' or text == 'شسمه البوت' or text == 'البوت شسمه' then
+if text == 'بوت' or text == 'البوت'  then
 Rio = math.random(3,1002); 
-local Text ='*✵اسمي '..NameBot..'*'
+local Text ='*᥀︙اسمي '..NameBot..'*'
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '« TeAm MilAn »',url="t.me/SORMILAN"}}} 
+keyboard.inline_keyboard = {{{text = '« TeAm MilAn »',url="t.me/SORMILAN"}}}
+keyboard.inline_keyboard = {
+{
+{text = texxtt, url="http://t.me/"..username},
+},
+{
+{text = 'اضغط لاضافه البوت لمجموعتك☑️ ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+},
+} 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AnimeDavid/'..Rio..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
