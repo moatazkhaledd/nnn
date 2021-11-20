@@ -5193,19 +5193,11 @@ end
 end 
 --     Source David     --
 if ChatType == 'sp' or ChatType == 'gp' or ChatType == 'pv' then
-if text == 'بوت' or text == 'البوت'  then
+if text == 'بوت' or text == 'بوتت' or text == 'شسمه البوت' or text == 'البوت شسمه' then
 Rio = math.random(3,1002); 
-local Text ='*᥀︙اسمي '..NameBot..'*'
+local Text ='*✵اسمي '..NameBot..'*'
 keyboard = {}  
-keyboard.inline_keyboard = {{{text = '« TeAm MilAn »',url="t.me/SORMILAN"}}}
-keyboard.inline_keyboard = {
-{
-{text = texxtt, url="http://t.me/"..username},
-},
-{
-{text = 'اضغط لاضافه البوت لمجموعتك☑️ ' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
-},
-} 
+keyboard.inline_keyboard = {{{text = '« TeAm MilAn »',url="t.me/SORMILAN"}}} 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AnimeDavid/'..Rio..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
