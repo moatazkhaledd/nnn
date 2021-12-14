@@ -8054,7 +8054,7 @@ HTTPS.request("https://api.telegram.org/bot"..TokenBot.."/restrictChatMember?cha
 DevRio:sadd(David..'Rio:Tkeed:'..msg.chat_id_, result.sender_user_id_)
 text = "✵⤈ تم تقيده من المجموعه" 
 keyboard = {} 
-keyboard.inline_keyboard = {{{text="• الغاء تقيد •",callback_data=msg.sender_user_id_..":UnTkeed:"..result.sender_user_id_}},{{text = '• TeAm MilAn •,url="t.me/SORMILAN"}}}
+keyboard.inline_keyboard = {{{text="• الغاء تقيد •",callback_data=msg.sender_user_id_..":UnTkeed:"..result.sender_user_id_}},{{text = '• TeAm MilAn •',url="t.me/SORMILAN"}}}
 Msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id='..msg.chat_id_..'&text=' .. URL.escape(text).."&reply_to_message_id="..Msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
